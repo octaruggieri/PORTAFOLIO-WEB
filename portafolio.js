@@ -15,8 +15,8 @@ function enviarMensaje() {
 
 
   //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
-  function seleccionar(link) {
-    var opciones = document.querySelectorAll('#links a');
+function seleccionar(link) {
+    var opciones = document.querySelectorAll('#links  a');
     opciones[0].className = "";
     opciones[1].className = "";
     opciones[2].className = "";
@@ -32,11 +32,11 @@ function enviarMensaje() {
 
 // Función que muestra el menú responsive
 function responsiveMenu() {
-    var x = document.getElementById("menu-nav");
-    if (x.classList.contains("desplegado")) {
-        x.classList.remove("desplegado");
+    var x = document.getElementById("menu-nav"); // Reemplazamos "nav" por "menu-nav"
+    if (x.classList.contains("desplegado")) { // Reemplazamos "x.className === \"\"" por "x.classList.contains(\"desplegado\")"
+        x.classList.remove("desplegado"); // Reemplazamos "x.className = \"responsive\"" por "x.classList.remove(\"desplegado\")"
     } else {
-        x.classList.add("desplegado");
+        x.classList.add("desplegado"); // Reemplazamos "x.className = \"\"" por "x.classList.add(\"desplegado\")"
     }
 }
 
