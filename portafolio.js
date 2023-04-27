@@ -55,3 +55,11 @@ function efectoHabilidades() {
     }
 
 }
+
+
+const iconoNav = document.getElementById('icono-nav');
+const menuNav = document.getElementById('menu-nav');
+
+iconoNav.addEventListener('click', function() {
+    menuNav.classList.toggle('desplegado');
+});
