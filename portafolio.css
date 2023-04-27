@@ -612,22 +612,4 @@ footer a {
                 margin-bottom: 15px;
             }
         
-            #icono-nav {
-                display: none; /* Oculta el ícono de la barra de hamburguesa por defecto en pantallas grandes */
-            }
-            
-            @media (max-width: 768px) {
-                #icono-nav {
-                    display: block; /* Muestra el ícono de la barra de hamburguesa en pantallas pequeñas */
-                }
-                
-                #menu-nav {
-                    display: none; /* Oculta el menú de navegación por defecto en pantallas pequeñas */
-                }
-                
-                /* Estilos adicionales para el despliegue del menú */
-                #menu-nav.desplegado {
-                    display: block;
-                }
-            }
         }

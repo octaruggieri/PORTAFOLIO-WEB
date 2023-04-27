@@ -30,13 +30,13 @@ function seleccionar(link) {
     x.className = "";
 }
 
-//función que muestra el menu responsive
+// Función que muestra el menú responsive
 function responsiveMenu() {
-    var x = document.getElementById("nav");
-    if (x.className === "") {
-        x.className = "responsive";
+    var x = document.getElementById("menu-nav"); // Reemplazamos "nav" por "menu-nav"
+    if (x.classList.contains("desplegado")) { // Reemplazamos "x.className === \"\"" por "x.classList.contains(\"desplegado\")"
+        x.classList.remove("desplegado"); // Reemplazamos "x.className = \"responsive\"" por "x.classList.remove(\"desplegado\")"
     } else {
-        x.className = "";
+        x.classList.add("desplegado"); // Reemplazamos "x.className = \"\"" por "x.classList.add(\"desplegado\")"
     }
 }
 
@@ -54,12 +54,13 @@ function efectoHabilidades() {
         document.getElementById("edit").classList.add("barra-progreso4");
     }
 
+    const iconoNav = document.getElementById('icono-nav');
+    iconoNav.addEventListener('click', responsiveMenu);
+
+iconoNav.addEventListener('click', function() {
+    nav.classList.toggle('responsive');
+});
+
 }
 
 
-const iconoNav = document.getElementById('icono-nav');
-const menuNav = document.getElementById('menu-nav');
-
-iconoNav.addEventListener('click', function() {
-    menuNav.classList.toggle('desplegado');
-});
