@@ -30,7 +30,6 @@ function seleccionar(link) {
     x.className = "";
 }
 
-// Función que muestra el menú responsive
 function responsiveMenu() {
     var x = document.getElementById("menu-nav"); // Reemplazamos "nav" por "menu-nav"
     if (x.classList.contains("desplegado")) { // Reemplazamos "x.className === \"\"" por "x.classList.contains(\"desplegado\")"
@@ -39,6 +38,7 @@ function responsiveMenu() {
         x.classList.add("desplegado"); // Reemplazamos "x.className = \"\"" por "x.classList.add(\"desplegado\")"
     }
 }
+
 
 //detecto el scrolling para aplicar la animación del la barra de habilidades
 window.onscroll = function() { efectoHabilidades() };
