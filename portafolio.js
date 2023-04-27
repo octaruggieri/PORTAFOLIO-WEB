@@ -12,11 +12,9 @@ function enviarMensaje() {
   }
 
 
-
-
-  //Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
+// Función que me aplica el estilo a la opción seleccionada y quita la previamente seleccionada
 function seleccionar(link) {
-    var opciones = document.querySelectorAll('#links  a');
+    var opciones = document.querySelectorAll('#links a');
     opciones[0].className = "";
     opciones[1].className = "";
     opciones[2].className = "";
@@ -24,26 +22,27 @@ function seleccionar(link) {
     opciones[4].className = "";
     link.className = "seleccionado";
 
-    //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
-    //en modo responsive
-    var x = document.getElementById("nav");
-    x.className = "";
+    // Hacemos desaparecer el menú una vez que se ha seleccionado una opción en modo responsive
+    var x = document.getElementById("menu-nav");
+    x.classList.remove("desplegado");
 }
 
-//función que muestra el menu responsive
+// Función que muestra el menú responsive
 function responsiveMenu() {
-    var x = document.getElementById("menu-nav"); // Reemplazamos "nav" por "menu-nav"
-    if (x.classList.contains("desplegado")) { // Reemplazamos "x.className === \"\"" por "x.classList.contains(\"desplegado\")"
-        x.classList.remove("desplegado"); // Reemplazamos "x.className = \"responsive\"" por "x.classList.remove(\"desplegado\")"
+    var x = document.getElementById("menu-nav");
+    if (x.classList.contains("desplegado")) {
+        x.classList.remove("desplegado");
     } else {
-        x.classList.add("desplegado"); // Reemplazamos "x.className = \"\"" por "x.classList.add(\"desplegado\")"
+        x.classList.add("desplegado");
     }
 }
 
-//detecto el scrolling para aplicar la animación del la barra de habilidades
-window.onscroll = function() { efectoHabilidades() };
+// Detecto el scrolling para aplicar la animación de la barra de habilidades
+window.onscroll = function() {
+    efectoHabilidades();
+};
 
-//funcion que aplica la animación de la barra de habilidades
+// Función que aplica la animación de la barra de habilidades
 function efectoHabilidades() {
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
@@ -53,14 +52,14 @@ function efectoHabilidades() {
         document.getElementById("ds").classList.add("barra-progreso3");
         document.getElementById("edit").classList.add("barra-progreso4");
     }
+}
 
-    const iconoNav = document.getElementById('icono-nav');
+const iconoNav = document.getElementById('icono-nav');
 const nav = document.querySelector('nav');
 
 iconoNav.addEventListener('click', function() {
     nav.classList.toggle('responsive');
 });
 
-}
 
 
