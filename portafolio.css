@@ -255,9 +255,11 @@ html {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: #0c0c0c;
     padding: 20px;
     margin-bottom: 25px;
+    
+    
 }
 
 #servicios .fila .servicio hr {
@@ -279,9 +281,16 @@ html {
     line-height: 22px;
 }
 
+#servicios .fila .icono {
+    font-size: 23px;
+    color: #e6c15d;
+    
+    
+}
+
 /* SECCION SKILLS*/
 .contenedor-skills {
-    background: linear-gradient(#ffc400, rgba(33, 16, 16, .8)), url("images/fondo\ de\ pagina\ final.jpg");
+    background: linear-gradient(#ffe48b, rgba(33, 16, 16, .8)), url("images/fondo\ de\ pagina\ final.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -337,10 +346,17 @@ html {
 }
 
 .contenedor-skills .skill .barra .barra-progreso4 {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 65%;
     height: 6px;
     animation: progreso4 2s forwards;
+}
+
+.info p {
+    color: #ffe366;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 @keyframes progreso1 {
