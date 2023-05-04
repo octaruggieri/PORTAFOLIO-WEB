@@ -204,16 +204,47 @@
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
             <div class="proyecto">
-
                 <div class="overlay"></div>
-                <img src="images/pagina web1 iamgen.jpg" alt="">
-                <div class="info">
-                    <h4>Pagina Web para Lavadero</h4>
-                    <p>Diseño Web y desarrollo</p>
-                </div>
+                <a href="https://lavaderoeie.netlify.app" onclick="myFunction(event)">
+                    <img src="images/pagina web1 iamgen.jpg" alt="">
+                    <div class="info">
+                        <h4>Pagina Web para Lavadero</h4>
+                        <p>Diseño Web y desarrollo</p>
+                    </div>
+                </a>
             </div>
         </div>
+    </section>
+    
+    <script>
+        function myFunction(event) {
+            event.preventDefault(); // Evita que se abra el enlace de inmediato
+            window.location.href = "https://lavaderoeie.netlify.app";
+        }
+    </script>
+    
+    <section id="portfolio">
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <a href="https://rosiche.mitiendanube.com/" onclick="myFunction(event)">
+                <img src="images/sitio web1.jpg" alt="">
+                <div class="info">
+                    <h4>Pagina Web para Indumentaria</h4>
+                    <p>Diseño Web y usos de TiendaNube</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
+<script>
+    function myFunction(event) {
+        event.preventDefault(); // Evita que se abra el enlace de inmediato
+        window.location.href = "https://rosiche.mitiendanube.com/";
+    }
+</script>
+       
         <!-- SECCTION C O N T A C T O -->
         <section id="contacto">
             <h3 class="titulo-seccion">Contactame ahora</h3>
