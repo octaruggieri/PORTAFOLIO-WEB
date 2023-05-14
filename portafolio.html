@@ -205,7 +205,7 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <a href="https://lavaderoeie.netlify.app" onclick="myFunction(event)">
+                <a href="https://lavaderoeie.netlify.app" onclick="openURL(event, 'https://lavaderoeie.netlify.app')">
                     <img src="images/pagina web1 iamgen.jpg" alt="">
                     <div class="info">
                         <h4>Pagina Web para Lavadero</h4>
@@ -217,26 +217,27 @@
     </section>
     
     <script>
-        function myFunction(event) {
-            event.preventDefault(); // Evita que se abra el enlace de inmediato
-            window.location.href = "https://lavaderoeie.netlify.app";
+        function openURL(event, url) {
+            event.preventDefault();
+            window.location.href = url;
         }
     </script>
     
     <section id="portfolio">
-    <div class="fila">
-        <div class="proyecto">
-            <div class="overlay"></div>
-            <a href="https://rosiche.mitiendanube.com/" onclick="myFunction(event)">
-                <img src="images/sitio web1.jpg" alt="">
-                <div class="info">
-                    <h4>Pagina Web para Indumentaria</h4>
-                    <p>Diseño Web y usos de TiendaNube</p>
-                </div>
-            </a>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://rosiche.mitiendanube.com/" onclick="openURL(event, 'https://rosiche.mitiendanube.com/')">
+                    <img src="images/sitio web1.jpg" alt="">
+                    <div class="info">
+                        <h4>Pagina Web para Indumentaria</h4>
+                        <p>Diseño Web y usos de TiendaNube</p>
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    
 
 <script>
     function myFunction(event) {

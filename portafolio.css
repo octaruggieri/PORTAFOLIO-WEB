@@ -400,7 +400,8 @@ html {
 }
 
 /* seccion P O R T F O L I O */
-#portfolio {
+#portfolio, 
+.portafolio2{
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
